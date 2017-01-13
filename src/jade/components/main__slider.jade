@@ -1,0 +1,11 @@
+-var slider_content = [{src:'assets/images/header__bar_tender.png',heading:'BREWERY',content:'Компания "Arento" занимается производством оборудования для пивоварен. Мы производим пивоваренное оборудование и продаем его по всей Украине и за рубежом'},{src:'assets/images/header__bar_tender.png',heading:'BREWERY',content:'Компания "Arento" занимается производством оборудования для пивоварен. Мы производим пивоваренное оборудование и продаем его по всей Украине и за рубежом'},{src:'assets/images/header__bar_tender.png',heading:'BREWERY',content:'Компания "Arento" занимается производством оборудования для пивоварен. Мы производим пивоваренное оборудование и продаем его по всей Украине и за рубежом'}]
+
+
+.main__slider
+	ul.main__slider--slides.main-slider
+		each el, i in slider_content
+				li.main__slider--slides--slide
+					.main__slider--slides--slide_text_content 
+						h2.main__slider--slides--slide_title #{el.heading}
+						p.main__slider--slides--slide_description #{el.content}
+					img.main__slider--slides--slide_slide(src="#{el.src}")

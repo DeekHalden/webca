@@ -1,0 +1,18 @@
+.services {
+	
+	h4 {
+		padding: 55px 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: #532f2e;
+		font-size: 180%;
+		font-family: 'pfagoraslabpro-black';
+	}
+	.services__row{
+		
+		
+		
+		@import 'services__row--card.scss'
+	}
+	
+}

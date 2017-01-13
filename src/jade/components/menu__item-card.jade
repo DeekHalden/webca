@@ -1,0 +1,11 @@
+- var data = [{src:"assets/images/item-tank-1.png",title:"BREWHOUSES",content:"Минипивоварня на 100 литров",href:"index.html"},{src:"assets/images/item-tank-2.png",title:"BREWHOUSES",content:"Минипивоварня на 100 литров",href:"index.html"},{src:"assets/images/item-tank-3.png",title:"BREWHOUSES",content:"Минипивоварня на 100 литров",href:"index.html"},{src:"assets/images/item-tank-4.png",title:"BREWHOUSES",content:"Минипивоварня на 100 литров",href:"index.html"}]
+
+mixin menu__item(items)
+	each item, index in items
+			a(href="#{item.href}").menu_row__item-card
+				img(src="#{item.src}").menu__item-card--media_content.clearfix
+				.menu_row__item-card--text_content
+					h3.menu_row__item-card--text_content--title #{item.title}
+					p.menu_row__item-card--text_content--description #{item.content}
+					
++menu__item(data)

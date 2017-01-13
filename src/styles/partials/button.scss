@@ -1,0 +1,34 @@
+button {
+
+		background-color: #3c1813;
+		color:#edeadb;
+		width:133px;
+		height:36px;
+		outline: none;
+		border:0;
+		padding: 5px 16px;
+		position: relative;
+		text-align:left;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		left:0;
+		right:0;
+		&:after {
+			content:"\003e";
+			position: absolute;
+			color:#edc27d;
+			font-size: 28px;
+			right: 0;
+			top:0;
+			background-color:#633e23;
+			width:37px;
+			height:34px;
+			padding-top:10px;
+			vertical-align: middle;
+			text-align: center;
+			padding-top: 2px;
+			border-left: 1px solid #edc27d;
+
+		}
+	}

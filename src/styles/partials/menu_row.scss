@@ -1,0 +1,16 @@
+.menu_row {
+	margin-top:1.5%;
+	display:table;
+	width: 100%;
+
+	@import 'menu__item-card';
+}
+
+
+@media (max-width: 639px) {
+	.menu_row {
+		width: 95%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}

@@ -1,0 +1,156 @@
+
+
+.header {
+	font-family: 'pfagoraslabpro-bold';
+	height:160px;
+	padding: 24px 0;
+
+	.header__slogan {
+		display: block;
+		margin: 0 auto;
+	}
+	.wrapper {
+		
+		float:left;
+		display:flex !important;
+		display:-webkit-flex !important;
+		justify-content:space-between;
+
+		.header__logo{
+			img {
+				width: 100%;
+				height:auto;
+			}
+		}
+		.header__navigation {
+			list-style: none;
+			
+			margin:65px 15px 0;
+			
+			.header__navigation--element {
+				display:inline-flex;
+				justify-content:space-between;
+				margin:0 7px;
+				a {
+					color:#404040;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+		}
+		.header__language_picker {
+			color:#592017;
+			margin-top:65px;
+			
+			margin-left: 14px;
+			display:block;
+			span {
+				margin: 0 7px;
+				select {
+					color:#592017;
+					margin:-14px 7px 14px;
+					padding: 14px;
+					border-radius: 5px;
+					background-color: transparent;
+					border-color: #592017;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px){
+	.header {
+		height:40px;
+		position:relative;
+		padding-top:3px;
+		.header__slogan {
+			height:auto;
+			width:320px;
+			text-align:center;
+		}
+		.wrapper {
+			.header__logo {
+				position: absolute;
+				top:5px;
+				
+				left:1%;
+				width: 40px;
+				height:100%;
+			}
+			.header__language_picker {
+				display: none;
+			}
+			ul.header__navigation {
+				margin: 0 ;
+  				padding: 0 5px;
+				
+  				right:0;
+
+  				overflow: hidden;
+  				position: absolute;
+				z-index: 4;
+				background:url('../images/nav__background.png');
+  				.header__navigation--element {
+  					float: left;
+  					display:none;
+  					a {
+
+  						display: inline-block;
+						text-align: right !important;
+						text-decoration: none;
+						transition: 0.3s;
+						font-size: 17px;
+						&:hover {
+							color:#ED1C24;
+						}
+  					}
+  					
+  				}
+				&.responsive {
+  					.header__navigation--element {
+	  					
+	  					float:none;
+	  					display:inline;
+	  					a {
+	  						display: block;
+	  						text-align: left;
+	  					}	
+  					}
+  				}
+			}
+			@import 'header__navigation--icon_menu';
+
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.header {
+		
+		.header__slogan {
+			display:none !important;
+
+		}
+		.wrapper {
+			display:inline;
+			.header__logo {
+				
+				padding-left: 7px;
+				position:relative;
+				img {
+					width:40px;
+					
+				}
+			}
+			ul.header__navigation {
+				top:85%;	
+			}
+			
+		}
+		.icon {
+			
+		}
+	}
+}
+

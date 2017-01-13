@@ -1,0 +1,72 @@
+.services__row--card {
+	width: 31.3%;
+	text-decoration:none;
+	color:#010000;
+	text-align: center;
+	background-color:#fff;
+	float:left;
+    padding-left:0px;
+    padding-right:0px;
+    transition:.3s linear all;
+    box-shadow: 0 0 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	position: relative;
+	
+	&:hover{
+		background-color:#fffcf7;	
+		cursor:pointer;
+	}
+    &:first-child{
+    	margin-right:1.5%;
+    }
+    &:nth-child(2) {
+		margin: 0 1.5%;
+    }
+    &:nth-child(3) {
+    	margin-left: 1.5%;
+    }
+    img {
+		padding: 56px 0 34px;
+    }
+	h5 {
+		color:#532f2e;
+		font-family: 'pfagoraslabpro-black';
+		font-size: 19px;
+		text-transform: uppercase;
+		padding-bottom: 41px;
+	}
+	p {
+		font-family: 'pfagoraslabpro-bold';
+		margin:0 72px;
+		line-height:30px;
+		font-size: 13px;
+		line-height:1.5em;
+		height: 15em;
+		padding-bottom:200px;
+		overflow:hidden;
+	}
+	@import 'button.scss'
+	
+}
+
+
+@media (max-width:1199px) {
+	.services__row--card {
+		width: 48%;
+		margin:1% !important;
+		p {
+			margin:0 5px;
+			padding-bottom:250px;
+		}
+	}
+}
+
+@media (max-width: 479px){
+		.services__row--card {
+			width: 100%;
+			margin: 10px 0 !important;
+		}
+
+ }

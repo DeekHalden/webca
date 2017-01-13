@@ -1,0 +1,13 @@
+include button
+-var cards = [{href:'index.html',icon:'assets/images/services__item--montage.png',title:'Работы',description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum id officia sit do aute fugiat nulla mollit aliquip quis ullamco do esse ullamco eu amet dolor deserunt.'},{href:'index.html',icon:'assets/images/services__item--electro_montage.png',title:'Работы',description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum id officia sit do aute fugiat nulla mollit aliquip quis ullamco do esse ullamco eu amet dolor deserunt.'},{href:'index.html',icon:'assets/images/services__item--repair.png',title:'Работы',description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum '}]
+
+each el, i in cards
+	a(href="index.html").services__row--card
+		img(src="#{el.icon}")
+		h5 #{el.title}
+		p #{el.description}
+		+CreateButton('Подробнее')
+
+	
+
+			
