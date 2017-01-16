@@ -1,5 +1,4 @@
 .services {
-	
 	h4 {
 		padding: 55px 0;
 		text-align: center;
@@ -9,10 +8,21 @@
 		font-family: 'pfagoraslabpro-black';
 	}
 	.services__row{
-		
-		
-		
 		@import 'services__row--card.scss'
 	}
-	
+}
+
+@media (max-width: 767px) {
+	.services {
+		width: 70%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+@media (max-width: 479px) {
+	.services {
+		width: 95%;
+		margin-left:auto;
+		margin-right:auto;
+	}	
 }
