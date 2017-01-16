@@ -20,7 +20,7 @@ body {
 	background-size: cover;
 	
 }
-.container {
+.row {
 	width: 1180px;
 	height:auto;
 	margin: 0 auto;
@@ -91,19 +91,19 @@ body {
 }
 
 @media ( max-width: 1199px){
-	.container {
+	.row {
 		width: 970px;
 	}
 }
 
 @media ( max-width: 991px){
-	.container {
+	.row {
 		width: 750px;
 	}
 }
 
 @media (max-width: 767px){
-	.container {
+	.row {
 		width: 100%;
 		
 	}
@@ -114,7 +114,7 @@ body {
 }
 
 // @media (max-width: 639px){
-// 	.container {
+// 	.row {
 // 	}
 // }
 

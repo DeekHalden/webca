@@ -3,13 +3,14 @@ button {
 	background-size:contain;
 	background-color: #3c1813;
 	color:#edeadb;
-	width:133px;
+	
 	height:39px;
 	outline: none;
 	border:0;
 	padding: 9px 59px 9px 9px;
 	position: relative;
 	cursor: pointer;
-	margin: 0 auto;
-	margin-bottom: 50px;
+	margin: 0 auto 50px;
+	display: block;
+	
 }

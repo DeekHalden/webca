@@ -1,7 +1,7 @@
 
 const gulp        = require('gulp'),
-    // sass        = require('gulp-ruby-sass'),
-    sass        = require('gulp-sass'),
+    sass        = require('gulp-ruby-sass'),
+    // sass        = require('gulp-sass'),
     csso        = require('gulp-csso'),
     uglify      = require('gulp-uglify'),
     jade        = require('gulp-jade'),
@@ -33,9 +33,9 @@ gulp.task('default', () => {
 
 // --- Basic Tasks ---
 gulp.task('styles', () => {
-    // sass('src/styles/styles.scss')
-    return gulp.src('src/styles/styles.scss')
-        .pipe(sass.sync().on('error', sass.logError))
+    sass('src/styles/styles.scss')
+    // return gulp.src('src/styles/styles.scss')
+        .on('error', sass.logError)
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -100,7 +100,7 @@ gulp.task('images', function() {
 // });
 
 gulp.task('templates', function() {
-  return gulp.src('src/jade/**/*.jade')
+  return gulp.src('src/jade/**/index.jade')
     .pipe(jade({
       pretty: true
     }))

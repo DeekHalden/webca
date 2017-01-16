@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <body>
   <div class="header__wrapper">
-    <div class="container">
+    <div class="row">
       <header class="header"><img src="assets/images/header__slogan.png" class="header__slogan">
         <div class="wrapper"><a href="index.html" class="header__logo"><img src="assets/images/header__logo.png"></a>
           <nav>
@@ -14,7 +14,7 @@
               <li class="header__navigation--element"><a href="index.html">о компании</a></li>
               <li class="header__navigation--element"><a href="index.html">оборудование</a></li>
               <li class="header__navigation--element"><a href="index.html">ингридиенты</a></li>
-              <li class="header__navigation--element"><a href="index.html">услуги</a></li>
+              <li class="header__navigation--element"><a href="#services">услуги</a></li>
               <li class="header__navigation--element"><a href="index.html">блог</a></li>
               <li class="header__navigation--element"><a href="index.html">контакты</a></li>
             </ul>
@@ -53,27 +53,27 @@
         </ul>
       </div>
       <div class="menu_row"><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-1.png" class="menu__item-card--media_content clearfix">
-                <div class="menu_row__item-card--text_content">
-                  <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
-                  <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
-                </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-2.png" class="menu__item-card--media_content clearfix">
-                <div class="menu_row__item-card--text_content">
-                  <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
-                  <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
-                </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-3.png" class="menu__item-card--media_content clearfix">
-                <div class="menu_row__item-card--text_content">
-                  <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
-                  <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
-                </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-4.png" class="menu__item-card--media_content clearfix">
-                <div class="menu_row__item-card--text_content">
-                  <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
-                  <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
-                </div></a>
+                  <div class="menu_row__item-card--text_content">
+                    <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
+                    <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
+                  </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-2.png" class="menu__item-card--media_content clearfix">
+                  <div class="menu_row__item-card--text_content">
+                    <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
+                    <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
+                  </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-3.png" class="menu__item-card--media_content clearfix">
+                  <div class="menu_row__item-card--text_content">
+                    <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
+                    <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
+                  </div></a><a href="index.html" class="menu_row__item-card"><img src="assets/images/item-tank-4.png" class="menu__item-card--media_content clearfix">
+                  <div class="menu_row__item-card--text_content">
+                    <h3 class="menu_row__item-card--text_content--title">BREWHOUSES</h3>
+                    <p class="menu_row__item-card--text_content--description">Минипивоварня на 100 литров</p>
+                  </div></a>
       </div>
     </div>
   </div>
   <div class="container-fluid slider_wrapper">
-    <div class="container">
+    <div class="row">
       <div class="main__slider">
         <ul class="main__slider--slides additional-slider">
           <li class="main__slider--slides--slide">
@@ -99,10 +99,10 @@
     </div>
   </div>
   <div class="container-fluid services_wrapper clearfix">
-    <div class="container">
+    <div class="row">
       <div class="services">
         <h4>Наши услуги</h4>
-        <div class="services__row clearfix"><a href="index.html" class="services__row--card"><img src="assets/images/services__item--montage.png">
+        <div id="services" class="services__row clearfix"><a href="index.html" class="services__row--card"><img src="assets/images/services__item--montage.png">
             <h5>Работы</h5>
             <p>Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum id officia sit do aute fugiat nulla mollit aliquip quis ullamco do esse ullamco eu amet dolor deserunt.</p>
                       <button>Подробнее</button></a><a href="index.html" class="services__row--card"><img src="assets/images/services__item--electro_montage.png">
@@ -117,10 +117,48 @@
     </div>
   </div>
   <div class="container-fluid blog_wrapper clearfix">
-    <div class="container">
+    <div class="row">
       <div class="blog">
         <h4>Блог</h4>
-        <div class="blog__post"></div>
+        <div class="row clearfix"><a href="post0.html" class="post">
+            <div class="post__media_content"><img src="assets/images/blog_barrel.png">
+                        <button>читать полностью</button>
+            </div>
+            <div class="wrapper"><span class="post__media_content--post_date">16.01.2017 </span><span class="post__media_content--people_seen"><img src="assets/images/blog__people_seen.png"><span> 1 просмотр</span></span></div>
+            <div class="post__text_content">
+              <h5>Lorem ipsum In enim in nulla.</h5>
+              <p>Lorem ipsum Minim dolor enim adipisicing Ut aliquip culpa mollit sint commodo esse amet id ut ea officia in.</p>
+            </div></a><a href="post1.html" class="post">
+            <div class="post__media_content"><img src="assets/images/blog_beer.png">
+                        <button>читать полностью</button>
+            </div>
+            <div class="wrapper"><span class="post__media_content--post_date">16.01.2017 </span><span class="post__media_content--people_seen"><img src="assets/images/blog__people_seen.png"><span> 4 просмотра</span></span></div>
+            <div class="post__text_content">
+              <h5>Lorem ipsum Magna ullamco fugiat elit in occaecat qui ut nisi consectetur dolore ullamco nulla ad Excepteur consectetur in.</h5>
+              <p>Lorem ipsum Qui consectetur ut aliquip esse enim eiusmod aute in dolore dolore ex cillum.</p>
+            </div></a><a href="post2.html" class="post">
+            <div class="post__media_content"><img src="assets/images/blog_hops.png">
+                        <button>читать полностью</button>
+            </div>
+            <div class="wrapper"><span class="post__media_content--post_date">16.01.2017 </span><span class="post__media_content--people_seen"><img src="assets/images/blog__people_seen.png"><span> 10 просмотров</span></span></div>
+            <div class="post__text_content">
+              <h5>Lorem ipsum Commodo labore nulla.</h5>
+              <p>Lorem ipsum Ut est sed cillum reprehenderit ut occaecat est minim quis veniam laboris velit esse sunt nisi enim ad minim in dolor sint laborum laborum in ea qui adipisicing esse sed pariatur in aliqua esse Excepteur.</p>
+            </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer_wrapper">
+    <div class="row">
+      <div class="footer clearfix"><img src="assets/images/footer__logo.png" class="footer__logo">
+        <div class="footer__contact_wrapper">
+          <ul class="clearfix">
+            <li class="footer__contact_wrapper--contact clearfix"><img src="assets/images/footer__pin.png"><span> г. Запорожье, ул. Бородинская, 85а </span><br><span> +38 (067) 6138320</span></li>
+            <li class="footer__contact_wrapper--contact clearfix"><img src="assets/images/footer__pin.png"><span> г. Запорожье, ул. Бородинская, 85а </span><br><span> +38 (067) 6138320</span></li>
+            <li class="footer__contact_wrapper--contact clearfix"><img src="assets/images/footer__pin.png"><span> г. Запорожье, ул. Бородинская, 85а </span><br><span> +38 (067) 6138320</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

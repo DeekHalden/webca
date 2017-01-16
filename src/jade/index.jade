@@ -3,21 +3,22 @@ head
 include partials/head
 body
 	.header__wrapper
-		.container 
+		.row 
 			include components/navbar
 			include components/main__slider
 			include components/menu_row
 	.container-fluid.slider_wrapper
-		.container 
+		.row
 			include components/ingredients_container
 	.container-fluid.services_wrapper.clearfix
-		.container
+		.row
 			include components/services
 	.container-fluid.blog_wrapper.clearfix
-		.container
+		.row
 			include components/blog
-
-
+	.container-fluid.footer_wrapper
+		.row
+			include partials/footer
 
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
 script(src="assets/scripts/all.min.js")
