@@ -1,0 +1,13 @@
+-var contacts = [{city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}, {city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}, {city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}]
+
+.row
+	.footer.clearfix
+		img.footer__logo(src="assets/images/footer__logo.png")
+		.footer__contact_wrapper
+			ul.clearfix
+				each el, i in contacts
+					li.footer__contact_wrapper--contact.clearfix
+						img(src="assets/images/footer__pin.png")
+						span  #{el.city} 
+						br
+						span  #{el.tel}

@@ -22,13 +22,13 @@ const gulp        = require('gulp'),
     combineMq = require('gulp-combine-mq'),
     babel = require('gulp-babel');
  
-gulp.task('default', () => {
-    return gulp.src('src/app.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(gulp.dest('dist'));
-});
+// gulp.task('default', () => {
+//     return gulp.src('src/app.js')
+//         .pipe(babel({
+//             presets: ['es2015']
+//         }))
+//         .pipe(gulp.dest('dist'));
+// });
 
 
 // --- Basic Tasks ---
@@ -100,7 +100,7 @@ gulp.task('images', function() {
 // });
 
 gulp.task('templates', function() {
-  return gulp.src('src/jade/**/index.jade')
+  return gulp.src(['src/jade/**/index.jade','src/jade/components/pages/*.jade'])
     .pipe(jade({
       pretty: true
     }))
@@ -123,10 +123,10 @@ gulp.task('browserSync', function() {
 /**
  * Serve and watch the jade files for changes
  */
-gulp.task('default', ['fonts', 'js','styles', 'browserSync','images'], function() {
+gulp.task('default', ['templates','fonts', 'js','styles', 'browserSync','images'], function() {
     
     gulp.watch('src/**/*.scss', ['styles-watch']);
-    gulp.watch('src/**/*.jade', ['jade-watch']);
+    gulp.watch('src/jade/components/pages/*.jade', ['jade-watch']);
     gulp.watch('src/**/*.js', ['js']);
     
 

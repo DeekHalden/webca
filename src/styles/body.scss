@@ -7,13 +7,16 @@
 html {
 	border-top: 11px solid red;
 	font-family: 'pfagoraslabpro-medium';
+	position: relative;
 }
 
 body {
 	
 	text-align: left;
+	> section:not(.active) { display:none; }
 }
 .header__wrapper {
+	
 	width:100%;
 	padding-bottom: 24px;
 	background:url('../images/header__main_background.png') no-repeat center center;
@@ -86,7 +89,7 @@ body {
 		border-top-width: 3px;
 	}
 	.header__wrapper {
-		
+		padding-top:50px;
 	}
 }
 

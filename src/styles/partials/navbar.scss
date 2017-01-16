@@ -1,22 +1,27 @@
 
 
 .header {
-	font-family: 'pfagoraslabpro-bold';
-	height:160px;
+	font-family: 'pfagoraslabpro-reg';
+	
 	padding: 24px 0;
+	
+	top:0;
+	left:0;
+	right:0;
+	background:url('../images/nav__background.png') no-repeat center center;
+	background-size: 100% 100%;
 
 	.header__slogan {
 		display: block;
 		margin: 0 auto;
 	}
 	.wrapper {
-		
-		float:left;
 		display:flex !important;
 		display:-webkit-flex !important;
 		justify-content:space-between;
 
 		.header__logo{
+			float:left;
 			img {
 				width: 100%;
 				height:auto;
@@ -62,7 +67,7 @@
 @media (max-width: 1199px){
 	.header {
 		height:40px;
-		position:relative;
+		
 		padding-top:3px;
 		.header__slogan {
 			height:auto;
