@@ -1,1 +1,1 @@
-# hosted on [link]https://deekhalden.github.io/pagespeed/
+# hosted on https://deekhalden.github.io/pagespeed/
