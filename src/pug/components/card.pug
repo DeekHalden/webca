@@ -1,0 +1,8 @@
+mixin CreateMenu__item(items)
+	each item, index in items
+			a(href=item.href).card
+				.card__media_content
+					img(src=item.src alt="item")
+				.card__text_content
+					h3.card__text_content--title #{item.title}
+					p.card__text_content--description #{item.content}

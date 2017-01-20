@@ -1,0 +1,112 @@
+.post {
+	text-decoration:none;
+	font-family: 'pfagoraslabpro-bold';
+	width: 31.3%;
+	float:left;
+	height:auto;
+	margin: 0 1.5%;
+	overflow:hidden;
+	transition:0.2s ease all;
+	&:hover {
+		opacity:0.95;	
+	}
+	&:first-child{
+    	margin-right:1.5%;
+    	margin-left:0;
+    }
+    
+    &:nth-child(3) {
+    	margin-right:0;
+    	margin-left: 1.5%;
+    }
+    .post__media_content {
+
+    	width:100%;
+    	
+		position: relative;
+		font-size: 10px;
+    	> img {
+    		max-width: 100%;
+    		
+    	}
+    	a {
+			position: absolute;
+			text-decoration:none;
+
+			font-size: 14px;
+			left:0;
+			bottom: 0px;
+			 margin-bottom: 0;
+			 &:hover {
+			 	text-decoration:underline;
+			 }
+		}
+		
+
+		
+    }
+    .wrapper {
+    	font-size: 10px;
+		margin: 19px 0;
+		
+		color:#010000;
+		.post__media_content--post_date {
+			padding-right:18px;
+		}
+		.post__media_content--people_seen {
+			> img {
+				vertical-align: bottom;
+			}
+		}
+	} 
+    .post__text_content {
+		line-height:25px;    		
+		height:200px;
+    	h5 {
+    		color: #532f2e;
+    		font-size: 18px;
+    		margin-bottom:26px;
+			overflow:hidden;
+    		
+    	}
+    	p {
+			color:#010000;
+			font-size: 13px;
+			
+			overflow:hidden;
+			margin-bottom:26px;
+			
+    	}
+    }
+
+}
+
+@media (max-width:1199px) {
+	.post {
+		width: 47%;
+		margin-bottom:5% !important;
+		.post__media_content {
+			height:auto;
+			a {
+				bottom:2px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.post {
+		width: 100%;
+		margin: 30px 0 !important;
+
+		.post__text_content { 
+			height:100%;
+			h5 {
+				// height:100px;
+			}
+			p {
+				// height:150px;
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+include button
+mixin CreateSubheading(title,buttonText,href,tag,className)
+	h2.clearfix.heading #{title}
+		+CreateButton(buttonText,href,tag,className)

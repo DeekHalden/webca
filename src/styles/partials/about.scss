@@ -1,10 +1,10 @@
 .about {
-	background:url('../images/about_background.png') no-repeat center center;
+	background:#000 url('../images/about_background.png') no-repeat center center;
 	background-size: cover;
 	
 	.about__wrapper {
 		
-		padding:61px 0 117px;
+		padding:39px 0px;
 		display:flex;
 		justify-content:space-between;
 		.about__wrapper--image {
@@ -29,9 +29,14 @@
 			h2 {
 				margin-bottom: 39px;
 				font-size: 34px;
+				line-height:34px;
 			}
 			p {
 				font-size: 18px;
+				
+				& +p{
+					margin-top:20px;	
+				}
 			}
 		}
 	}

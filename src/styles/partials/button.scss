@@ -1,9 +1,11 @@
-button {
+.styled {
 	background: #3c1813 url(../images/but_icon.png) no-repeat right;
 	background-size:contain;
-	background-color: #3c1813;
+	font-family: 'pfagoraslabpro-reg';
+	font-weight: 500;
+	letter-spacing:1px;
 	color:#edeadb;
-	z-index: 5;
+	z-index: 1;
 	height:39px;
 	outline: none;
 	border:0;
@@ -12,5 +14,9 @@ button {
 	cursor: pointer;
 	margin: 0 auto 50px;
 	display: block;
+	transition:.1s linear all;
+	&:hover {
+		background: #633e23 url(../images/but_icon.png) no-repeat right;
+	}
 	
 }

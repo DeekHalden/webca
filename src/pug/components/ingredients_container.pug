@@ -1,0 +1,17 @@
+-var slider_content = [{leftImage:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt06aInHbKL6NwLIP-Kx90M-QjhLcnxEDe8LaehoDz7zuqBNFBHg',rightImage:'http://localhost:3000/assets/images/blog_beer.png',leftCaption:'Cолод',rightCaption:'Хмель'},{leftImage:'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRQPCan_VzeqNCejuB_b2Sr6v_U9Tg87GJ4wCL8SJZwSjzCEukTSi9cJE',rightImage:'assets/images/ingredients__slider--hops.png',leftCaption:'Cолод',rightCaption:'Хмель'},{leftImage:'assets/images/ingredients__slider--malt.png',rightImage:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKF1jj7wioJ4vIF-I-wySqpwCLZyBTJsI8-eMDqefnGTraVTVcHg',leftCaption:'Cолод',rightCaption:'Хмель'}]
+.container-fluid.slider_wrapper
+	.row
+		.main_slider
+			img.beer(src="assets/images/mm_beer.png")
+			ul.main_slider__slides.additional-slider
+				each el, i in slider_content
+					li.main_slider__slides--slide
+						.main_slider__slides--slide_left
+							a(href="#")
+								img(src=el.leftImage)
+								p el.leftCaption
+						.main_slider__slides--slide_right
+							a(href="#")
+								img(src=el.rightImage)
+								p el.rightCaption
+	

@@ -1,0 +1,25 @@
+include button
+-var posts = [{href:'post.html', image:'assets/images/blog_barrel.png',post_date:'16.01.2017', people_seen:1, title:'Lorem ipsum In enim in nulla.', content:['Lorem ipsum Minim dolor enim adipisicing Ut aliquip culpa mollit sint commodo esse amet id ut ea officia in.','Lorem ipsum Ex sed aute sint incididunt laborum occaecat enim dolore ullamco deserunt veniam cillum aliquip ad et occaecat deserunt dolor commodo.','Lorem ipsum Nisi exercitation elit magna aliquip sed aliqua pariatur consequat dolore velit voluptate fugiat irure laborum consectetur laborum pariatur dolor in.','Lorem ipsum Laboris ex fugiat adipisicing elit dolore commodo labore Ut mollit culpa dolor officia non non commodo in et Duis qui quis reprehenderit reprehenderit aute enim quis culpa in exercitation aliquip consectetur cupidatat amet aliqua pariatur dolor nostrud velit.']}, {href:'post.html', image:'assets/images/blog_beer.png',post_date:'16.01.2017', people_seen:4, title:'Lorem ipsum Magna ullamco fugiat elit in occaecat qui ut nisi consectetur dolore ullamco nulla ad Excepteur consectetur in.', content:['Lorem ipsum Qui consectetur ut aliquip esse enim eiusmod aute in dolore dolore ex cillum.','Lorem ipsum Ex sed aute sint incididunt laborum occaecat enim dolore ullamco deserunt veniam cillum aliquip ad et occaecat deserunt dolor commodo.','Lorem ipsum Nisi exercitation elit magna aliquip sed aliqua pariatur consequat dolore velit voluptate fugiat irure laborum consectetur laborum pariatur dolor in.','Lorem ipsum Laboris ex fugiat adipisicing elit dolore commodo labore Ut mollit culpa dolor officia non non commodo in et Duis qui quis reprehenderit reprehenderit aute enim quis culpa in exercitation aliquip consectetur cupidatat amet aliqua pariatur dolor nostrud velit.']}, {href:'post.html', image:'assets/images/blog_hops.png',post_date:'16.01.2017', people_seen:10, title:'Lorem ipsum Commodo labore nulla.', content:['Lorem ipsum Ut est sed cillum reprehenderit ut occaecat est minim quis veniam laboris velit esse sunt nisi enim ad minim in dolor sint laborum laborum in ea qui adipisicing esse sed pariatur in aliqua esse Excepteur.','Lorem ipsum Ex sed aute sint incididunt laborum occaecat enim dolore ullamco deserunt veniam cillum aliquip ad et occaecat deserunt dolor commodo.','Lorem ipsum Nisi exercitation elit magna aliquip sed aliqua pariatur consequat dolore velit voluptate fugiat irure laborum consectetur laborum pariatur dolor in.','Lorem ipsum Laboris ex fugiat adipisicing elit dolore commodo labore Ut mollit culpa dolor officia non non commodo in et Duis qui quis reprehenderit reprehenderit aute enim quis culpa in exercitation aliquip consectetur cupidatat amet aliqua pariatur dolor nostrud velit.']}];
+
+	each post, i in posts
+		.post
+			.post__media_content
+				img(src="#{post.image}")
+				+CreateButton("читать полностью", post.href, 'a')
+			.wrapper
+				span.post__media_content--post_date #{post.post_date} 
+				span.post__media_content--people_seen
+					img(src="assets/images/blog__people_seen.png")
+					if (post.people_seen == 0 || post.people_seen > 4)
+						span  #{post.people_seen} просмотров
+					else if (post.people_seen == 1)
+						span  #{post.people_seen} просмотр
+					else if (post.people_seen > 1 || post.people_seen <= 4)
+						span  #{post.people_seen} просмотра
+			.post__text_content 
+				h5 #{post.title}
+				p #{post.content[0]}
+					
+						
+
+

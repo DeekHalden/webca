@@ -1,0 +1,25 @@
+-var posts = [{href:'post0.html', image:'assets/images/blog_barrel.png',post_date:'16.01.2017', people_seen:1, title:'В Атлантическом океане найдена бутылка возрастом 125 лет', content:['Значимость этих проблем настолько очевидна, что консультация с широким активом способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании новых предложений. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа направлений прогрессивного развития.','С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение систем массового участия. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют определения и уточнения форм развития.','Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке форм развития. Товарищи! реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Товарищи! рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений.']}, {href:'post1.html', image:'assets/images/blog_beer.png',post_date:'16.01.2017', people_seen:4, title:'Lorem ipsum Magna ullamco fugiat elit in occaecat qui ut nisi consectetur dolore ullamco nulla ad Excepteur consectetur in.', content:['Lorem ipsum Qui consectetur ut aliquip esse enim eiusmod aute in dolore dolore ex cillum.','Lorem ipsum Ex sed aute sint incididunt laborum occaecat enim dolore ullamco deserunt veniam cillum aliquip ad et occaecat deserunt dolor commodo.','Lorem ipsum Nisi exercitation elit magna aliquip sed aliqua pariatur consequat dolore velit voluptate fugiat irure laborum consectetur laborum pariatur dolor in.','Lorem ipsum Laboris ex fugiat adipisicing elit dolore commodo labore Ut mollit culpa dolor officia non non commodo in et Duis qui quis reprehenderit reprehenderit aute enim quis culpa in exercitation aliquip consectetur cupidatat amet aliqua pariatur dolor nostrud velit.']}, {href:'post2.html', image:'assets/images/blog_hops.png',post_date:'16.01.2017', people_seen:10, title:'Lorem ipsum Commodo labore nulla.', content:['Lorem ipsum Ut est sed cillum reprehenderit ut occaecat est minim quis veniam laboris velit esse sunt nisi enim ad minim in dolor sint laborum laborum in ea qui adipisicing esse sed pariatur in aliqua esse Excepteur.','Lorem ipsum Ex sed aute sint incididunt laborum occaecat enim dolore ullamco deserunt veniam cillum aliquip ad et occaecat deserunt dolor commodo.','Lorem ipsum Nisi exercitation elit magna aliquip sed aliqua pariatur consequat dolore velit voluptate fugiat irure laborum consectetur laborum pariatur dolor in.','Lorem ipsum Laboris ex fugiat adipisicing elit dolore commodo labore Ut mollit culpa dolor officia non non commodo in et Duis qui quis reprehenderit reprehenderit aute enim quis culpa in exercitation aliquip consectetur cupidatat amet aliqua pariatur dolor nostrud velit.']}];
+
+include subheading
+.post
+	.heading_wrapper
+		.row
+			+CreateSubheading("Блог","читать польностью","/","a")
+	.row.content_wrapper.clearfix
+		.content_wrapper__heading
+			h2 #{posts[0].title}
+			span.content_wrapper__heading--post_date #{posts[0].post_date} 
+				span.content_wrapper__heading--people_seen
+					img(src="assets/images/blog__people_seen.png")
+					if (posts[0].people_seen == 0 || posts[0].people_seen > 4)
+						span  #{posts[0].people_seen} просмотров
+					else if (posts[0].people_seen == 1)
+						span  #{posts[0].people_seen} просмотр
+					else if (posts[0].people_seen > 1 || posts[0].people_seen <= 4)
+						span  #{posts[0].people_seen} просмотра
+			
+		.content_wrapper__media
+			img(src="assets/images/blog_beer.png")
+		.content_wrapper__text
+			each paragraph, i in posts[0].content
+				p #{paragraph}

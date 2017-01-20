@@ -1,0 +1,9 @@
+-var contacts = [{city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}, {city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}, {city:'г. Запорожье, ул. Бородинская, 85а', tel: "+38 (067) 6138320"}]
+
+ul.clearfix.contact_wrapper
+	each el, i in contacts
+		li.contact_wrapper__contact.clearfix
+			img(src="assets/images/footer__pin.png")
+			span  #{el.city} 
+			br
+			span  #{el.tel}

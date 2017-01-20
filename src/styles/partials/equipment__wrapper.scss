@@ -1,0 +1,47 @@
+.heading_wrapper {
+	background: url('../images/about_background.png') no-repeat center center;
+	background-size: cover;
+	padding: 33px 0 36px;
+	h2 {
+		
+		color:#faeddb;
+		font-family: 'pfagoraslabpro-reg';
+		font-size: 35px;
+		
+		a.styled {
+			text-decoration:none;
+			width: 280px;
+			color:#edeadb;
+			font-size: 16px;
+			font-family: 'pfagoraslabpro-medium';
+			float: right;
+			margin: 0;
+			background: #3c1813 url(../images/arrow_with_red_background.png) no-repeat right;
+			&:hover {
+				text-decoration:underline;
+				background:#3c2011 url(../images/arrow_with_red_background.png) no-repeat right;
+			}
+		}
+	}
+}
+.equipment {
+	background-color: #fff;
+	padding:6px 0 26px;
+}
+
+
+@media (max-width: 639px) {
+	.heading_wrapper {
+		padding: 11px 0 18px;
+		h2 {
+			text-align: center;
+			a.styled {
+				float:none;
+				margin-top:20px;
+				margin-left:auto;
+				margin-right:auto;
+
+			}
+		}
+	}
+}

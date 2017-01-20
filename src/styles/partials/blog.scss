@@ -1,7 +1,16 @@
+
+.blog_wrapper {
+	background: url('../images/blog_background.png') no-repeat center center;
+	background-size: cover;
+	
+	
+}
+
 .blog {
+	padding: 55px 0 ;
 	h4{
 		text-align: center;
-		padding: 55px 0;
+		padding-bottom: 55px;
 		text-transform: uppercase;
 		color: #532f2e;
 		font-size: 180%;
@@ -11,7 +20,7 @@
 		display:flex;
 		justify-content: space-between;
 		flex-wrap:wrap;
-		@import 'post.scss'; 
+		@import 'blog__post.scss'; 
 	}	
 }
 

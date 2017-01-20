@@ -3,3 +3,11 @@
     position: relative;
     height:470px !important;
 }
+
+
+.ingredients {
+	padding-bottom:20px;
+	.card:first-child {
+		margin-top:20px;
+	}
+}

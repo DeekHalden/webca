@@ -13,9 +13,11 @@
     "gulp-combine-mq": "^0.4.0",
     "gulp-concat": "~2.1.7",
     "gulp-csso": "~0.1.8",
+    "gulp-ext-replace": "^0.3.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-jade": "~0.3.0",
     "gulp-livereload": "~0.2.0",
+    "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.1.1",
     "gulp-sass": "^3.1.0",
@@ -24,9 +26,13 @@
     "gulp-uglify": "~0.1.0",
     "gulp-util": "~2.2.12",
     "marked": "~0.3.0",
+    "pug": "^2.0.0-beta6",
+    "pump": "^1.0.2",
     "tiny-lr": "0.0.5"
   },
   "dependencies": {
-    "imagemin-optipng": "^5.2.1"
+    "imagemin-optipng": "^5.2.1",
+    "vue": "^2.1.10",
+    "vue-router": "^2.1.3"
   }
 }

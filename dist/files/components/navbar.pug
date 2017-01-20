@@ -1,0 +1,19 @@
+- var a = [{href:"index.html",title:"главная"},{href:"about.html",title:"о компании"},{href:"equipment.html",title:"оборудование"},{href:"ingredients.html",title:"ингридиенты"},{href:"index.html#services",title:"услуги"},{	href:"post.html",title:"блог"},{href:"contacts.html",title:"контакты"}];
+
+header.header
+	img(src="assets/images/header__slogan.png" alt="slogan").header__slogan
+	.wrapper.row
+		a(href="index.html").header__logo
+			img(src="assets/images/header__logo.png" alt="arento logo")
+		nav
+			ul.header__navigation#nav
+				each el, i in a
+					li.header__navigation--element
+						a(href="#{el.href}") #{el.title}
+			include navbar__button
+		.header__language_picker
+			span language:
+				select
+					each element, i in ["RU","ENG"]
+						option(value="#{element}") #{element}
+

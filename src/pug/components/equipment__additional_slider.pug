@@ -1,0 +1,18 @@
+-
+	var slides = [
+		"assets/images/equipment__tank.png","assets/images/header__bar_tender.png",
+		"assets/images/blog_hops.png",
+		"assets/images/item-tank-4.png",
+		"assets/images/equipment__tank.png",
+		"assets/images/header__bar_tender.png",
+		"assets/images/blog_hops.png",
+		"assets/images/item-tank-4.png"
+	]
+
+
+.equipment__additional_slider.slider
+	ul#equipment__additional_slider
+		each item, i in slides
+			li
+				a(href="/"+item).hrefs
+					img(src=item).img-responsive

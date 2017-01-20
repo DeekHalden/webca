@@ -1,0 +1,80 @@
+#dialog {
+	width: 50%;
+	height:auto;
+	position: relative;
+  	margin: 0 auto;
+	color:#3c1813;
+	.service_wrapper {
+		
+		
+	  	width: 100%;
+	  	background-color: #fff;
+
+	  	
+
+		.service_wrapper__heading  {
+			padding: 35px  42px;
+			
+			img {
+				float:left;
+				margin-right:22px;
+
+			}
+			h2 {
+				position: relative;
+				top:0;
+				bottom:0;
+				line-height:36px;
+				font-size: 18px;
+				font-weight: 900;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+		
+			}
+		}
+		.service_wrapper__content {
+			.service_wrapper__content--media {
+				width:100%;
+				
+				img {
+					width: 100%;
+					height:100%;
+				}
+			}
+			.service_wrapper__content--description {
+				padding:40px 46px;
+				font-size: 14px;
+				font-weight: 500;
+				font-family: 'pfagoraslabpro-medium';
+				p {
+					&+p {
+						padding-top:10px;
+					}
+				}
+			}
+
+		}
+	}
+	.mfp-close {
+		color:#73291c;
+		font-weight: 700;
+		opacity:1;
+	}
+}
+
+@media (max-width: 1199px){
+	#dialog{
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px){
+	
+}
+
+
+@media (max-width: 767px) {
+	#dialog {
+		
+	}
+}

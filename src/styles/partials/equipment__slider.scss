@@ -1,0 +1,39 @@
+@import '../lightslider';
+
+.slider {
+	float:left;
+	width: 48%;
+	margin-right: 30px;
+	ul.lSPager{
+		height:111px;
+	}
+	&.equipment__additional_slider {
+		width: 100%;
+	}
+	ul {
+		li.lslide {
+			height:100%;			
+		}
+	}
+
+}
+
+@media (max-width:1199px){
+	.slider {
+		float:none;
+		margin:0 auto;
+		width: 100%;
+		ul.lSPager{
+			height:150px;
+		}
+		li[data-thumb] {
+			
+		}
+	}
+}
+
+@media (max-width: 639px){
+	.slider {
+		
+	}
+}

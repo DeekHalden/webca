@@ -1,0 +1,246 @@
+
+.main_wrapper {
+	padding: 38px 0;
+	h2 {
+		color:#3c1813;
+		font-size: 25px;
+		padding-bottom: 32px;
+	}
+	@import 'equipment__slider';
+	.equipment_media {
+		width:48%;
+		float:left;
+		img {
+			width: 100%;
+			height:auto;	
+		}
+		
+	}
+	.equipment_characteristics {
+		float: right;
+		width: 48%;
+		
+		.equipment_characteristics__price {
+			&.ingredient {
+				.equipment_characteristics__price--text-wrapper {
+					p {
+						padding: 50px;
+						text-align:center;
+						span {
+							border-radius: 50%;
+							width: 10px;
+							height: 10px;
+							float:left;
+							font-size: 0;
+							margin-top:3px;
+							margin-left: 25px;
+							&.enabled {
+								background-color: #24cf18;
+							}
+							&.disabled {
+								background-color: #ed1c24;
+							}
+						}
+					}
+				}
+			}
+			height:112px;
+			background: url('../images/price__bg.png') no-repeat center center;
+			background-size: cover;
+			.equipment_characteristics__price--text-wrapper {
+				font-family: 'pfagoraslabpro-medium';
+				h3 {
+					padding:25px 36px 36px 27px;
+					font-size: 48px;
+					color: #ffd557;
+					font-weight: 500;
+					float:left;
+				}
+				p {
+					color: #eae7d8;
+					font-size: 12px; 
+					font-weight: 500;
+					line-height: 14px; 
+					text-align: left;
+					padding: 20px 27px 21px 0;
+				}
+			}
+		}
+		.equipment_characteristics__technical {
+			float: right;
+			color:  #3c1813;
+			width: 100%;
+			&.ingredient {
+				p.equipment_characteristics__technical--made_by {	
+					margin-top:28px;
+					font-weight: 500;
+					padding:24px 0 20px 20px;
+					font-size: 14px;
+					border:1px solid #3c1813;
+					span {
+						font-weight: 700;
+					}
+				}
+				.equipment_characteristics__technical--hints {
+					padding-top:29px;
+					display: flex;
+					list-style: none;
+					flex-wrap:wrap;
+					justify-content: space-between;
+					font-size: 14px;
+					li {
+						flex:1;
+						float:left;
+						&+li {
+							padding-left:32px;
+						}
+						h5 {
+							font-weight: 700;
+						}
+						p {
+							font-weight: 500;
+						}
+						ul {
+							
+							list-style-type: none;
+							li {
+								padding-left:14px;
+								&:before {
+									display: inline-block;
+								    content: "-";
+								    width: 1em;
+								    margin-left: -1em;
+								}
+							}
+						}
+						
+					}
+				}
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+				color:  #3c1813;
+				width:100%;
+				font-weight: 500;
+				text-align: left;
+				tbody {
+					tr {
+						td {
+							border: 0;
+						 	padding:7px 25px;	
+						 }
+						&:nth-child(odd) {
+							 background-color: #eae7d8;
+						}
+					}
+				}
+			}
+		}
+	}
+	.equipment__description{
+		padding:28px 0 ;
+		color: #3c1813;
+		font-size: 14.01px;
+		font-weight: 500;
+		
+	
+		p + p {
+			padding-top: 20px;
+
+		}
+	}
+	@import 'equipment__additional_slider';
+
+
+}
+
+@media (max-width:1199px ) {
+
+	.main_wrapper {
+		padding:19px 0 40px;
+		h2 {
+			width: 95%;
+			margin: 0 auto;
+		}
+		.wrapper {
+			position: relative;
+			.equipment_media {
+				width: 100%;
+			}
+			.equipment_characteristics {
+				width: 100%;
+				padding-top:15px;
+				float: none;
+				margin: 0 auto;
+				.equipment_characteristics__price {
+					height:auto;
+					&.ingredient {
+						width: 150px;
+								padding:0;	
+								
+								position: absolute;
+								top:0;
+								right:0;
+								h3 {
+									float:none;
+									text-align: center;
+								}
+								p {
+									text-align: center;
+								}
+								h3, p {
+									padding:0 !important;
+									margin:0;
+								}
+					}
+					.equipment_characteristics__price--text-wrapper {
+						h3 {
+							padding-top:25px;
+							font-size: 20px;
+						}
+						
+						
+					}
+				}
+				table {
+					margin: 0;
+					padding:0;
+				}
+			}
+
+			
+		}
+			.equipment_description{
+				padding-top:20px !important;
+			}
+		
+	}
+	
+}
+
+
+
+@media (max-width: 639px){
+	.main_wrapper {
+		.equipment_characteristics {
+			
+			.equipment_characteristics__price {
+				height: auto;
+				.equipment_characteristics__price--text-wrapper {
+					h3 {
+						float: none;
+						padding:10px 0 0;
+						text-align: center;
+					}
+					p {
+						width: 95%;
+						margin: 10px auto;
+						padding:0 0 10px;
+					}
+				}
+			}
+		}
+	}
+	
+}

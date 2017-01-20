@@ -1,3 +1,7 @@
+@import '_popup_settings.scss';
+@import 'popup.scss';
+
+
 @import 'fonts.scss';
 @import 'body.scss';
 @import './partials/navbar.scss';
@@ -5,8 +9,16 @@
 @import './partials/menu_row.scss';
 @import './partials/ingredients_container.scss';
 @import './partials/services.scss';
+@import './partials/service.scss';
 @import './partials/blog.scss';
 @import './partials/footer.scss';
 @import './partials/about.scss';
+@import './partials/equipment__wrapper.scss';
+@import './partials/equipment__item.scss';
+@import './partials/post.scss';
+@import './partials/contacts.scss';
+@import './partials/contact_wrapper.scss';
 
 @import './partials/button.scss';
+
+

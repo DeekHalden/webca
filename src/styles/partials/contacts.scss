@@ -1,0 +1,124 @@
+.heading_wrapper {
+	h2 {
+		a.styled.call-button {
+			text-decoration:none;
+			width: 280px;
+			background: #3c1813 url(../images/phone.png) no-repeat right;
+			&:hover {
+				background:#3c2011 url(../images/phone.png) no-repeat right;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+
+.contacts {
+	.contacts__heading {
+		min-height: 170px;
+		background: url('../images/contacts.png') no-repeat center center;
+		background-size: 100% 100%;
+		color:#fff;
+		position: relative;
+		.row {
+			position: absolute;
+			top:50%;
+			left:0;
+			right: 0;
+			transform: translateY(-50%);
+			.contact_wrapper {
+				font-size: 17px !important;
+				.contact_wrapper__contact {
+					padding: 10px 0;
+					margin: auto;
+					img {
+						
+						height: 29px;
+					}
+				}
+			}
+		}
+	}
+	.contacts__map {
+		width: 100%;
+		height:200px;
+		position: relative;
+		transition: .2s linear all;
+		margin-bottom: 8px;
+		.button_wrapper {
+				width: 320px;
+				height: 50px;
+				position: absolute;
+				margin:0 auto;
+				left:calc(100% / 2 - 160px);
+				bottom:0;
+				z-index: 2;
+				
+				opacity: .9;
+				background:url('../images/cool_button.png')no-repeat ;
+				background-size: 100% 100%;
+				transition:.2s ease all;
+				&:hover {
+					opacity:1;
+				}
+			button {
+				width: 100%;
+				height:100%;
+				font-weight: 500;
+				font-family: 'pfagoraslabpro-medium';
+				letter-spacing: 1px;
+				display: block;
+				margin: 0 auto;
+				vertical-align: bottom;
+				outline: none;
+				padding-top:12px;
+				border:none;
+				background-color: transparent;
+				color:#3c1813;
+				text-decoration:underline;
+				transition:.2s linear all;
+				&:hover {
+					color:#ED1C24;
+				}
+
+			}
+			
+		}
+		#map{
+			height:100%;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width:479px){
+	.contacts {
+		.contacts__heading {
+			
+			.row {
+				
+				.contact_wrapper {
+					font-size: 12px !important;
+					.contact_wrapper__contact {
+						padding: 10px 0;
+						margin: auto;
+						img {
+							
+							height: 29px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc, div[jstcache]{
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+

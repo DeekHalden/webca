@@ -1,0 +1,40 @@
+include button
+-
+	var cards = [
+		{
+			href:'#dialog',
+			icon:'assets/images/services__item--montage.png',
+			title:'Работы',
+			description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum id officia sit do aute fugiat nulla mollit aliquip quis ullamco do esse ullamco eu amet dolor deserunt.'
+		},{
+			href:'#dialog',
+			icon:'assets/images/services__item--electro_montage.png',
+			title:'Работы',
+			description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum id officia sit do aute fugiat nulla mollit aliquip quis ullamco do esse ullamco eu amet dolor deserunt.'
+		},{
+			href:'#dialog',
+			icon:'assets/images/services__item--repair.png',
+			title:'Работы',
+			description:'Lorem ipsum Dolor veniam minim esse culpa qui non anim dolor minim Ut deserunt cillum '
+		}
+	]
+
+each el, i in cards
+	.services__row--card.popup-with-zoom-anim(href=el.href)
+		img(src=el.icon)
+		h5 #{el.title}
+		p #{el.description}
+		+CreateButton('подробнее', el.href, 'a')
+
+#dialog.zoom-anim-dialog.mfp-hide
+	.service_wrapper
+			.service_wrapper__heading.clearfix
+				img(src="assets/images/services__item--repair.png")
+				h2 Электро-<br>монтажные работы
+			.service_wrapper__content
+				.service_wrapper__content--media
+					img(src="assets/images/electro_dude.png")
+				.service_wrapper__content--description
+					p Lorem ipsum Incididunt dolor ut in aute dolor occaecat amet anim aliquip officia id fugiat non dolore est mollit adipisicing laborum officia minim ex commodo Excepteur consectetur reprehenderit pariatur tempor minim proident eu aute reprehenderit labore.
+					p Lorem ipsum Est enim fugiat aliquip culpa dolor proident sint incididunt sed in non sit qui est exercitation in culpa proident dolor.
+					p Lorem ipsum Excepteur in laboris sint sed pariatur et qui proident est exercitation mollit in laboris nulla enim sunt velit dolor Duis ea sed non consectetur est sint reprehenderit culpa in officia nostrud nisi sit adipisicing dolor proident labore quis qui est sunt magna consequat nostrud in irure Ut cupidatat fugiat eu Excepteur culpa ullamco Duis nisi laborum anim aliqua sit magna commodo in reprehenderit aliquip dolore magna sunt in ad reprehenderit elit reprehenderit labore sed qui incididunt minim deserunt et nulla ut Ut ut dolor Excepteur Excepteur mollit ad cillum dolore ut dolor minim aliqua amet Ut est ut id reprehenderit sunt laboris Duis et eu tempor in proident Excepteur ullamco enim sunt aliquip proident nulla anim exercitation occaecat incididunt eu dolore nulla non dolore fugiat in labore voluptate exercitation voluptate voluptate sint voluptate ea sunt irure consequat aute incididunt adipisicing adipisicing nostrud reprehenderit in eu in ullamco reprehenderit aliquip Duis nulla elit mollit dolor ut dolor occaecat aute esse id non quis enim fugiat enim eiusmod elit in dolore sit irure incididunt culpa in sed deserunt sit mollit dolor qui labore ea mollit dolore Ut exercitation do laboris veniam irure adipisicing id mollit do consectetur consequat eu et aute tempor Ut dolor eiusmod enim occaecat magna ut pariatur velit cupidatat est Excepteur proident aliqua officia ea ad esse eiusmod occaecat veniam officia id Ut voluptate sit eiusmod mollit elit cupidatat eu adipisicing velit incididunt do culpa fugiat.
